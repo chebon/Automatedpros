@@ -22,5 +22,5 @@ Route::post('login', 'AuthController@login');
 Route::post('logout', 'AuthController@logout');
 
 Route::group(['middleware' => 'jwt.auth'], function () {
-    // Your protected routes here
+    
 });
